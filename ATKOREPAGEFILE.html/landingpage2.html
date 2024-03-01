@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+       <link rel="icon" href="C:\Users\User\Downloads\images (1).png" type="image/x-icon">
+
+
+    <style>
+        
+  h4{
+    height:14px ;
+  }
+
+
+
+
+    div.animation4{
+    position: absolute; text-align: center; font-size: 24px; color: chocolate; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top:4px ; left: 4px; height:190px ; width:190px ; border-radius:95px ; border-color: blue; border-style: dashed;
+    background-color: cadetblue;
+    animation: animation4;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+@keyframes animation4{
+10%{background-color:red ;   border-color: saddlebrown; border-width:4px ;      transform:rotateX(360deg);   }                                                       
+      20%{ background-color:yellowgreen ;  border-color:darkblue ; border-width:4px ;  transform:rotateX(360deg);          }
+      30%{background-color:violet ;      border-color:deeppink ; border-width:4px ;  transform:rotateX(360deg);              }
+      40%{background-color: hotpink;      border-color:darkgray ; border-width:4px ;   transform:rotateX(360deg);             }
+      50%{background-color: yellow;       border-color: darkgoldenrod; border-width:4px ;      transform:rotateX(360deg);           }
+      60%{background-color: khaki;      border-color:darkkhaki ; border-width:4px ;   transform:rotateX(360deg);                 }
+      70%{background-color: purple;      border-color:darkgreen ; border-width:4px ; transform:rotateX(360deg);                   }
+      80%{background-color: saddlebrown;  border-color: firebrick; border-width:4px ;      transform:rotateX(360deg);            }
+      90%{background-color:firebrick ;    border-color: seagreen; border-width:4px ;     transform:rotateX(360deg);                     }
+    100%{background-color: gold;          border-color:saddlebrown ; border-width:4px ;       transform:rotateX(360deg);                 }
+    }
+
+
+
+        .myanimation{
+    position:absolute ;
+    top: 200px; text-align: center;
+    right: 600px;
+    height:300px ; width: 300px;
+    animation: myanimation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+
+@keyframes myanimation {
+ 0% {  color: brown; font-size: 10px; span::first-letter{
+    color:red;     }       }
+   10% {  color: blueviolet;    font-size:20px ; span::first-letter{
+    color:darkslateblue;     }       }
+  20% {  color: crimson; font-size: 25px; span::first-letter{
+    color:darkorange;     }          }
+   30% { color: turquoise; font-size:30px ;
+    span:first-letter{
+    color:deeppink;     }}     
+
+  40%{  color: blueviolet;    font-size:35px ; span::first-letter{
+    color:darkslateblue;     }       }
+   50% {  color: crimson; font-size: 40px; span::first-letter{
+    color:darkorange;     }          }
+   60%{  color: darkcyan; font-size:35px ; span::first-letter{
+    color:deeppink;     } }
+    70%{  color: rgb(245, 245, 245); top:200px; font-size:30px ;
+    span::first-letter{
+    color:deepskyblue;     }
+   }
+   80%{ color: turquoise; font-size:30px ;
+    span::first-letter{
+    color:deeppink;     }}
+   100%{  color: rgb(245, 245, 245); top:200px; font-size:10px ;
+    span::first-letter{
+    color:deepskyblue;     }
+   }
+}
+
+
+
+
+a{text-decoration: none; color:whitesmoke ; }
+.tooltip { color: #fff;
+  position: absolute; border: 2px solid blue; background-color:darkred; border-radius: 6px;
+  top: 28px ;
+  left:350px ; height:50px ; width:90px ; text-align: center; vertical-align: middle; }
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color:darkblue;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top:50px ;
+  left:40px ;
+  margin-left: -60px;}
+.tooltip:hover .tooltiptext {visibility: visible;}
+.tooltip1 {
+  position: absolute; border: 2px solid blue; background-color:darkred; border-radius: 6px;
+  top:26px ;
+  left:550px ; height:50px ; width:90px ; text-align: center; vertical-align: middle;}
+.tooltip1 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color:darkblue;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top:50px ;
+  left:20px ;}
+ .tooltip1:hover .tooltiptext {
+  visibility: visible;}
+.tooltip2 {
+  position: absolute; border: 2px solid blue; background-color:darkred; border-radius: 6px;
+  top:26px ;
+  left:750px ; height:50px ; width:90px ; text-align: center; vertical-align: middle;}
+.tooltip2 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color:darkblue;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top:50px ;
+  left:40px ;
+  margin-left: -60px;}
+ .tooltip2:hover .tooltiptext {
+  visibility: visible;}
+
+  div.select{
+position: absolute;
+top: 10px;
+right: 330px; border-radius: 6px ; height:60px ; width:140px ;
+background-color: lightpink;
+overflow: auto;
+cursor: pointer;
+}
+
+.button{ position: absolute; cursor: pointer; float: left; text-align: center; vertical-align: middle;
+    top: 10px;  right: 185px;  height: 50px;  width: 100px;  background-color: rgba(206, 91, 15, 0.753);
+    border-radius: 6px ;  border:2px solid rgba(196, 9, 9, 0.637) ;
+}
+.button:hover{
+    background-color: rgba(7, 7, 241, 0.925); border:2px solid rgba(9, 226, 74, 0.733) ;
+}
+#img{
+    position: absolute;
+    top: 0px;
+    right: -180px;
+
+}
+
+.list{
+    position: absolute;
+    right: 6px;
+    top:170px ;}
+#LIST{border-radius: 6px; height: 40px ; width: 200px ;}
+
+
+#iframelink{font-size: 20px;  font-weight: bolder; color:red;}
+.iframelink{ display: inline;
+    position: absolute;
+    right: 40px; font: size 24px ; 
+    top:240px ; text-decoration: none; cursor: pointer;
+    height:60px; width:190px;
+}
+
+.iframe{
+    position: absolute;  transition-property: width, height, ; transition-duration: 4s ;
+    right:20px ;
+    top: 290px;
+    width:200px ; height:60px ;
+    background-color: lightblue; z-index:1;
+}
+
+.iframe:hover{
+    width:80% ; height:180% ; background-color: lightblue; 
+}
+iframe{ height:100% ; width:100% ;}
+
+.style{
+    position:fixed ;
+    top: ;
+    left: ;
+    height: ;
+    width: ;
+}
+
+
+
+.contactus{
+    position: absolute;
+    top:200px ; left:10px;
+  font-size: 20px;
+  color: darkviolet;
+
+}
+#a{
+    color: darkblue;
+}
+.imghover{
+    transition-property: width, height, ; transition-duration: 1s ; position: sticky;
+}
+.imghover:hover{
+    height:85px ;
+    width: 85px;
+}
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="myanimation">
+     
+    <span>ATKORE</span>
+    <span>THE</span>
+    <span>FUTURE</span>
+    <span>BRAND</span>
+</div>
+
+
+<div class="animation4"  >
+    
+    <div   > 
+        <h4  > A <br>
+            ********</h4> 
+        
+       <h4>International <br>
+        ********</h4> 
+       
+       <h4>Company <br>
+        ********</h4> 
+    
+   </div>  </div>  
+
+   <div class="select">
+     Go to Product
+   <select name="select prodcuct" id=""> 
+       <option value="">select product</option>
+       <option value=""><a href="#">GO TOsd</a></option>
+       <option value=""><a href="#">GO TO  sdvsd </a></option>
+       <option value=""><a href="#"> x GO TO</a></option>
+       <option value=""><a href="#">GO TO</a></option>
+       <option value=""><a href="#">GO xc TO</a></option>
+       <option value=""><a href="#">GO TO</a></option>
+       <option value=""><a href="#">Gx cO TO</a></option>
+       <option value=""><a href="#">GOxc  TO</a></option>
+       <option value=""><a href="#">GO Tcx O</a></option>
+       <option value=""><a href="#">GO Txc O</a></option>
+       <option value=""><a href="#">GO Tcx O</a></option>
+       <option value=""><a href="#">GO Tc xO</a></option>
+       <option value=""><a href="#">GO T cO</a></option>
+       <option value=""><a href="#">GO Tx O</a></option>
+       <option value=""><a href="#">GO TxcO</a></option>
+   </select> 
+</div>
+
+
+    
+        
+    
+    
+    
+    
+       
+    
+<a href="">
+  <div class="tooltip" id="tooltip">
+  
+      HOME
+     <span class="tooltiptext">
+      GO TO PRODUCT
+     </span>
+       
+  </div>
+
+</a>   
+  <a href="">
+      <div class="tooltip1" id="tooltip">  
+       
+          ABOUT
+          <span class="tooltiptext">
+          KNOW ABOUT COMPANY
+          </span>
+           
+     </div>
+ 
+  </a>
+  <a href="">
+      <div class="tooltip2" id="tooltip">
+       
+          PRODUCT
+         <span class="tooltiptext">
+         INFORMATION ABOUT PRODDUCT
+        </span>
+         
+     </div>
+
+    
+         
+    
+    
+    
+    
+           
+        <div title="GO TO NEXT PAGE" class="button">
+        <a href="">
+        
+         <span>NEXT</span>
+        </a>
+         <img id="img" src="C:\Users\User\Downloads\LOGO.png" 
+         height="150" width="150" alt="error loading">
+        </div>
+                
+    
+        
+    
+    
+      
+      <div class="list">
+        
+        <label for="M.LIST">Choose your browser from the list:</label> <br>
+        <input list="M.LIST" name="M.LIST" id="LIST">
+        <datalist id="M.LIST">
+            <a href="#"><option value="QASIM"></a>
+            <a href="#"><option value="ASIM"></a>
+            <a href="#"><option value="HASHIM"></a>
+            <a href="#"><option value="HAMZA"></a>
+            <a href="#"><option value="AHMAD"></a>
+            <a href="#"><option value="ALI"></a>
+            <a href="#"><option value="ABDULLAH"></a>
+            <a href="#"><option value="ABDULLAH"></a>
+            <a href="#"><option value="SHAH"></a> 
+            <a href="#"><option value="WARIS"></a>
+            <a href="#"><option value="X RAY "></a>
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a> 
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a> 
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a>
+            <a href="#"><option value=""></a>                                            
+        </datalist>
+         
+      </div>
+    
+      
+    
+      <div class="iframelink">
+        <a  id="iframelink"  href="" target="iframe_a">click to open product page Below Here</a>
+    </div>
+    <div class="iframe">
+        <a href="" target="iframe_a">click to open the product page </a>
+        <a  id="iframelink"  href="" target="iframe_a"> <iframe    src="demo_iframe.htm" name="iframe_a"  title="Iframe Example" border="2px"></iframe> </a>
+    </div>  
+    <div class="contactus">
+      Contact us: <br>
+      <a id="a" href="">
+        <img class="imghover" src="C:\Users\User\Downloads\download (16).jpg" height="80" width="80" alt="error laoding"></a> 
+
+            <a id="a"  href=""> <img class="imghover"  src="data:image/png;base64,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
+              "  height="80" width="80" alt="error loading"> </a> 
+
+            <a id="a"  href="">  <img  class="imghover" src="data:image/jpeg;base64,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
+            " height="80" width="80" alt="error loading"></a>             
+
+</body>
+</html>

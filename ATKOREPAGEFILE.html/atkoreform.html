@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+     
+ 
+input[type=checkbox] {
+  accent-color: red;
+}
+
+input[type=radio] {
+  accent-color: blue;
+}
+
+input[type=range] {
+  accent-color: rgb(0, 0, 255);
+}
+
+progress {
+  accent-color: hsl(39, 100%, 50%);
+}
+
+
+     .center{
+            
+            top: 100px; right: 100px;
+            text-align: left;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+
+           
+        .formheading{
+            
+            background-color: rgba(121, 224, 2, 0.712);
+            top: 100px; right: 100px;
+            color: maroon;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        
+        }
+
+
+
+
+      .top-right {
+          position: absolute;
+          top: 0px;
+          right: 250px;}
+        
+        
+        
+        .top-left {
+          position: absolute;
+          top: 120px;
+          left: 5px;
+          margin-top: auto;
+          font-family: Georgia, 'Times New Roman', Times, serif;}
+        
+
+          .center {
+          position: absolute;
+          top: 250px; left: 75px ;
+          text-align: center;
+          font-size: 15px;}
+        
+
+
+          .buttonstyle{
+            background-color: rgba(89, 0, 255, 0.877);
+            border-radius: 30px;
+            height: 120px;
+       cursor: pointer;     width: 140px;} 
+        
+        
+        
+            td::first-letter{
+            font-size: 60px;
+            color:blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;}
+            
+            
+        
+            .button{
+                background-color: purple;
+                color: antiquewhite;
+            height: 120px;
+            width: 150px;
+       cursor: pointer; border-radius: 40px;}
+        
+        
+        
+        .top-right2{
+            position: absolute;
+            right: -250px;
+            top: 10px;}
+        
+
+
+            button:hover{
+            background-color:green;
+            color: blue;
+            font-size: 20px;}
+
+
+         .fieldset1{
+            border-radius:10px ;
+            height: 60px; 
+            width: 300px;
+         }
+        
+         
+         .fieldset2{
+            height: 120px; 
+            width:  120px; 
+         }
+        .instructionheading{
+            color: saddlebrown;
+            font-size: 20px;
+            font-family: fantasy;
+            font-weight: bolder;
+        }
+ ul{
+    list-style-type: square; 
+     list-style-position: inside;
+     color: rgb(47, 2, 248);
+ }
+ .fieldsetA{
+    background-color: rgb(255, 0, 0); font-size: 20px;
+ }
+.fieldsetB{ background-color: lightblue;}
+.fieldsetC{
+    background-color: rgb(211, 197, 7); font-size: 20px;
+}
+.fieldsetD{
+    background-color: rebeccapurple;  font-size: 20px;
+}
+.fieldsetE{background-color: cornflowerblue; font-size: 20px;}
+body{background-color: lightblue;}
+
+
+div.animation2{
+        position: absolute;
+        top: 310px;
+        left:0px ;
+        height: 50px;
+        width: 50px;
+        animation: animation2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+         transition: 1s 1s transform 1s ;
+    }
+    @keyframes animation2{
+        0%{
+            background-color: blue; height:100px ; width:100px;  
+            top: 310px; transform:rotate(-180deg)
+        }
+    
+      10%{background-color:red ;  height:100px ; width:100px ;      transform: rotateY(180deg);   top: 310px; }                                           
+      20%{ background-color:yellowgreen ;  height:120pxpx ; width:120px ;   transform:rotateZ(-180deg);   top:330px ;}
+      30%{background-color:violet ;  height:140px ; width:140px ;       transform:rotateY(180deg);      top: 310px;}
+      40%{background-color: hotpink;  height:160px ; width:160px ;    transform:rotateZ(-1800deg);    top: 310px;}
+      50%{background-color: yellow;  height:180px ; width:180px ;      transform:rotateY(1800deg);  top: 310px; }
+      60%{background-color: khaki;  height:180px ; width:180px ;     transform:rotateZ(-1800deg);   top: 310px;   }
+      70%{background-color: purple;  height:160px ; width:160px ;    transform:rotateY(180deg);    top: 310px;            }
+      80%{background-color: saddlebrown;  height:140px ; width:140px;    transform:rotateZ(-180deg);  top: 310px; }
+      90%{background-color:firebrick ;  height:120px ; width:120px ;    transform:rotateY(180deg);   top: 310px;    }
+    100%{background-color: gold;  height:100px ; width:100px ;         transform:rotateZ(-180deg);   top: 310px;           }
+    }
+    
+    
+ .animation3 {position: absolute;
+  width: 100px; top: 310px; left:0px ; 
+  height: 100px;
+ background: red;
+ animation: animation3;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-duration:4s ;
+animation-direction: normal;
+ transition:1s 1s transform 2s ;
+
+}
+@keyframes animation3{
+    0%{
+            background-color: blue; height:100px ; width:100px;  
+         left: 0px;   top: 310px; transform:rotate(-180deg);
+        }
+    
+      10%{background-color:red ;  height:100px ; width:100px ;   transform: rotateX(180deg);  top: 310px;}                                                       
+      20%{ background-color:yellowgreen ;  height:120pxpx ; width:120px ;  transform:rotateZ(-180deg);   top: 310px;}
+      30%{background-color:violet ;  height:140px ; width:140px ;     transform:rotateX(180deg);        top: 310px;}
+      40%{background-color: hotpink;  height:160px ; width:160px ;    transform:rotateZ(-180deg);        top: 310px;}
+      50%{background-color: yellow;  height:180px ; width:180px ;      transform:rotateX(180deg);      top: 310px;}
+      60%{background-color: khaki;  height:180px ; width:180px ;     transform:rotateZ(-180deg);          top: 310px;       }
+      70%{background-color: purple;  height:160px ; width:160px ;    transform:rotateX(180deg);         top: 310px;          }
+      80%{background-color: saddlebrown;  height:140px ; width:140px;   transform:rotateZ(-180deg);       top: 310px;  }
+      90%{background-color:firebrick ;  height:120px ; width:120px ;   transform:rotateX(180deg);           top: 310px;          }
+    100%{background-color: gold;  height:100px ; width:100px ;         transform:rotateZ(-180deg);         top: 310px;          }
+    }
+    
+    
+div.animation4{
+        position: absolute;
+        top: 310px;
+        right:0px ;
+        height: 50px;
+        width: 50px;
+        animation: animation2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+         transition: 1s 1s transform 1s ;
+    }
+    @keyframes animation2{
+        0%{
+            background-color: blue; height:100px ; width:100px;  
+            top: 310px; transform:rotate(-180deg)
+        }
+    
+      10%{background-color:red ;  height:100px ; width:100px ;      transform: rotateY(180deg);   top: 310px; }                                           
+      20%{ background-color:yellowgreen ;  height:120pxpx ; width:120px ;   transform:rotateZ(-180deg);   top:330px ;}
+      30%{background-color:violet ;  height:140px ; width:140px ;       transform:rotateY(180deg);      top: 310px;}
+      40%{background-color: hotpink;  height:160px ; width:160px ;    transform:rotateZ(-1800deg);    top: 310px;}
+      50%{background-color: yellow;  height:180px ; width:180px ;      transform:rotateY(1800deg);  top: 310px; }
+      60%{background-color: khaki;  height:180px ; width:180px ;     transform:rotateZ(-1800deg);   top: 310px;   }
+      70%{background-color: purple;  height:160px ; width:160px ;    transform:rotateY(180deg);    top: 310px;            }
+      80%{background-color: saddlebrown;  height:140px ; width:140px;    transform:rotateZ(-180deg);  top: 310px; }
+      90%{background-color:firebrick ;  height:120px ; width:120px ;    transform:rotateY(180deg);   top: 310px;    }
+    100%{background-color: gold;  height:100px ; width:100px ;         transform:rotateZ(-180deg);   top: 310px;           }
+    }
+    
+    
+ .animation5 {position: absolute;
+  width: 100px; top: 310px; right:0px ; 
+  height: 100px;
+ background: red;
+ animation: animation3;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-duration:4s ;
+animation-direction: normal;
+ transition:1s 1s transform 2s ;
+
+}
+@keyframes animation3{
+    0%{
+            background-color: blue; height:100px ; width:100px;  
+         right: 0px;   top: 310px; transform:rotate(-180deg);
+        }
+    
+      10%{background-color:red ;  height:100px ; width:100px ;   transform: rotateX(180deg);  top: 310px;}                                                       
+      20%{ background-color:yellowgreen ;  height:120pxpx ; width:120px ;  transform:rotateZ(-180deg);   top: 310px;}
+      30%{background-color:violet ;  height:140px ; width:140px ;     transform:rotateX(180deg);        top: 310px;}
+      40%{background-color: hotpink;  height:160px ; width:160px ;    transform:rotateZ(-180deg);        top: 310px;}
+      50%{background-color: yellow;  height:180px ; width:180px ;      transform:rotateX(180deg);      top: 310px;}
+      60%{background-color: khaki;  height:180px ; width:180px ;     transform:rotateZ(-180deg);          top: 310px;       }
+      70%{background-color: purple;  height:160px ; width:160px ;    transform:rotateX(180deg);         top: 310px;          }
+      80%{background-color: saddlebrown;  height:140px ; width:140px;   transform:rotateZ(-180deg);       top: 310px;  }
+      90%{background-color:firebrick ;  height:120px ; width:120px ;   transform:rotateX(180deg);           top: 310px;          }
+    100%{background-color: gold;  height:100px ; width:100px ;         transform:rotateZ(-180deg);         top: 310px;          }
+    }
+</style>
+</head>
+<body >
+
+
+
+    <div class="animation2"></div> 
+    <div class="animation3"></div>
+<div class="animation4" ></div>
+<div class="animation5"></div>
+
+
+
+    <div > 
+        <a  class="tople-left"  href="http://127.0.0.1:5500/extensions/qasimhotel2.html">
+            <button class="button">
+                <input type="submit" value=" PREVOUS PAGE ">
+              </button>
+        </a>
+        
+    </div>
+
+    <div class="top-right"> 
+          <table   cellspacing="30px" >
+           <tr >
+               
+               <td  height="200px" width="100px">  THE</td>
+               <td height="200px" width="100px" >ATKORE  </td>
+               <td height="200px" width="100px">INTERNATIONAL</td>
+            <td ><img src="data:image/png;base64,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
+               
+               " height="200px" width="200px" alt="eroor loading"></td>
+           
+           <a class="top-right2" href="http://127.0.0.1:5500/qasim.html/QASIMHOTEL3.html">
+               <button class="button">
+                   <input type="submit" value=" NEXT PAGE ">
+                 </button>  
+           </a> 
+       </tr>
+         
+   </table>
+   </div> 
+   <div class="center">
+    <h1 class="formheading" > FILL FOLLOWING FORM TO BECOME A MEMBER</h1> <br>
+     <dl class="instruction heading"><dd class="instruction heading"> 
+       <u><b><h3>FOLLOW THE INSTRUCTION TO FILL THE FORM</h3></b></u> 
+    </dd></dl>
+     <ul >
+        <li >IT IS NECESSARY TO FILL EVERY FIELD OF THE FORM</li>      
+        <li >CAREFULLY FILL EVERY FIELD OF THE FORM</li>
+        <li >PLEASE DO NO INPUT WORNG DATA IN ANY FIELD OF THE FORM</li>
+        <li >CHECK THE FORM AFTER FILLING EVERY FIELD</li>
+        <li >PLEASE FOLLOW THE INSTRUCTION CAREFULLY</li>
+     </ul>  
+    <form action="mail to:shahmijaz9@gmail.com"  method="post" formtarget="New">
+   
+         <fieldset class="fieldsetA">
+            <h1>PERSINAL INFORMATION</h1>
+            USERNAME: <input class="fieldset1" type="text" required   placeholder=" ENTER YOUR NAME" size="20" maxlength="40"> 
+        FATHER NAME:          <input  class="fieldset1" type="text" required   placeholder="ENTER YOUR FATHER NAME" size="20" maxlength="40">
+        <br>
+        EMAIIL:               <input  class="fieldset1" type="text" required   placeholder=" ENTER YOUR EMAIL" size="30" maxlength="40">
+      PASSWORD :              <input class="fieldset1" type="password" required   PALCEHOLDER=" enter password" size="20" maxlength="40">
+      <br>
+      PHONE NO:               <input class="fieldset1" type="number" required   placeholder="ENTER YOUR PHONE NO" size="20" maxlength="40">
+     ADDRESS:                <input  class="fieldset1" type="text" required   placeholder="ENTER YOUR ADDRESS" size="20" maxlength="40">
+      
+      
+    </fieldset>
+   
+    <fieldset  class="fieldsetB">
+       <h1>UPLOAD A PHOTO</h1> 
+        <br> 
+        (USE DIFFERENT PHOTO TO UPLOAD)   
+        <input class="fieldset2" type="file" required  multiple   
+         placeholder="ENTER YOUR UPLOAD A PHOTO" size="80" maxlength="80" height="80" width="40"> <br>
+         <input type="range"  min="0" value="60"   max="100">
+       
+    </fieldset>
+       <fieldset class="fieldsetC"  >
+        <h1>SELECT FROM THESE OPTION</h1>
+        FAVOURITE FOOD: <select  class="fieldset1"  name="favouritefood" id="favouritefood">
+        <option value="">PIZZA</option>
+        <option value="">SMALL BURGER</option>
+        <option value="">CHEESE</option>
+        <option value="">ZINGER BURGER</option>
+        <option value="">CHICKEN ROAST</option>
+        <option value="">CHICKEN BROAST</option>
+    </select>
+        PROFESSION: <select  class="fieldset1"name="PROFESSION" id="PROFESSION">
+            <OPTION>PROGRAMMER</OPTION>
+        <OPTION>DOCTOR</OPTION>
+        <OPTION>ENGINEER</OPTION>
+        <OPTION>POLITICIAN</OPTION>
+        <OPTION>POLICEMAN</OPTION></select>
+        <br>
+        FABOURTE SPORTS: <select  class="fieldset1" name="favourite sports" id="favourite sports">
+            <option value="">HOCKEY</option>
+            <option value="">CRICKET</option>
+            <option value="">FOOD</option>
+            <option value="">ONLINE GAMING</option>
+            <option value="">INDOOR GAMING</option>
+        </select> 
+        <br>
+       <form action="no.php">
+        <br>
+            DISABILITY:  
+             <label for="DISABILITY">
+
+            YES   <input type="checkbox" id="DISABILITY"        value="Yes"  class="yes">
+            NO   <input type="checkbox"  id="DISABILITY"        value="NO"  class="no">
+         </label>
+      <br> <br>
+            GENDER: 
+                
+            <label for="male">
+           MALE <input type="radio"  id="male" value="male"           class="male"  > FEMALE <input type="radio"   id="male" value="female"       class="female">
+                    
+        </label>
+                
+       </form>  
+  </fieldset  >
+  <fieldset class="fieldsetD">
+    <h1>ENTER DATE AND TIME OF FORM SUBMIT</h1>
+    ENTER DATE: <input class="fieldset1"  type="date" required   PLACERHOLDER="ENTER YOUR DATE"  size="" maxlength="">
+    ENTER TIME: <input  class="fieldset1" type="time" required   PLACERHOLDER="ENTER YOUR TIME"  size="" maxlength="">
+      <br>  
+    CHOOSE COUNTRY: <select  class="fieldset1" name="country" id="country">
+        <option value="">PAKISTAN</option>
+        <option value="">AMERICA</option>
+        <option value="">CHINA</option>
+        <option value="">INDIA</option>
+        <option value="">AFGHANISTAN</option>
+    </select>
+  </fieldset>
+    <fieldset class="fieldsetE">
+        <h1>CLICK TO SUBMIT OR RESET YOUR FORM</h1> 
+   CLICK BUTTON TO  RESET FORM: 
+       <button class="reset button">
+        <input type="reset"  required   placeholder="ENTER YOUR RESET" size="" maxlength="">
+    </button>  
+    
+     CLICK BUTTON TO   SUBMIT FORM:   
+        <button   class="buttonstyle">
+        <input  type="submit"  required   placeholder="ENTER YOUR SUBMIT" size="" maxlength="">
+      </button>  
+     </fieldset>
+   </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ 
+h4::first-letter{
+    color: darkred; font-size:20px ; text-shadow: 0 0 6px #0000FF,0 0 6px darkmagenta,0 0 4px darkorange;
+}
+h4{
+    color: indigo; }
+
+
+
+
+
+ 
+.flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: DodgerBlue;
+        justify-content: space-around;
+        width:50% ;
+      }
+      
+      .flex-container > div {
+        width:12%;
+        height:2%;
+        text-align: center;
+        line-height: 350%;
+     
+    }
+    h5{
+        display: flex;
+    }
+    a{
+        text-decoration: none;
+    }
+     h5{ 
+        background-color: #0000FF;
+        border: darkmagenta;
+        border-radius: 2%;
+        color: white;
+        text-decoration: none;
+        cursor: pointer; transition: 1s 1 2; 
+     }         
+   h5:hover{
+ color: black;
+ background-color: white;
+ border: 2px solid red;
+ height:120% ; width:120% ;
+    }
+    .h5{
+        background-color: red;
+        color: white;
+        transition: 1s 1 2;
+    }
+      .h5:hover{
+        background-color: blueviolet;
+        color: red;
+        height:120% ; width:120% ;
+      }  
+
+
+      .list{
+    position: absolute;
+    margin-right:100%;
+    top:0% ;}
+#LIST{border-radius: 6px; height: 20% ; width: 40%;}
+
+
+
+#iframelink{font-size: 20px;  font-weight: bolder; color:red;}
+.iframelink{ display: inline;
+    position: absolute;
+    top: 0%; font: size 24px ; 
+     text-decoration: none; cursor: pointer;
+    height:60px; width:190px;
+}
+
+.iframe{
+    position: absolute;  transition-property: width, height, ; transition-duration: 4s ;
+    left:10px ;
+    top: 280px;
+    width:200px ; height:60px ;
+    background-color: lightblue; z-index:1;
+}
+
+.iframe:hover{ top:170px ;
+    width:80% ; height:220% ; background-color: lightblue; 
+}
+iframe{ height:100% ; width:100% ;}
+
+
+</style>
+<body>
+      <div class="flex-container">
+        <div><a href="" title="Go To Homepage"><h5>HOME</h5> 
+        </a></div>
+        <div><a href="" title="Know About Company"> <h5> ABOUT</h5></a> </div>  
+        <div><a href="" title="Go to Product Page"> <h5>PRODUCT</h5> </a></div>
+         
+          
+            <div>
+            <select name="select prodcuct" > 
+        
+            <option value="">Go to product</option>
+            <option value=""><a href="#">GO TOsd</a></option>
+            <option value=""><a href="#">GO TO  sdvsd </a></option>
+            <option value=""><a href="#"> x GO TO</a></option>
+            <option value=""><a href="#">GO TO</a></option>
+            <option value=""><a href="#">GO xc TO</a></option>
+            <option value=""><a href="#">GO TO</a></option>
+            <option value=""><a href="#">Gx cO TO</a></option>
+            <option value=""><a href="#">GOxc  TO</a></option>
+            <option value=""><a href="#">GO Tcx O</a></option>
+            <option value=""><a href="#">GO Txc O</a></option>
+            <option value=""><a href="#">GO Tcx O</a></option>
+            <option value=""><a href="#">GO Tc xO</a></option>
+            <option value=""><a href="#">GO T cO</a></option>
+            <option value=""><a href="#">GO Tx O</a></option>
+            <option value=""><a href="#">GO TxcO</a></option>
+        </select> </div>
+     
+           <div >  <a href="" title="Go to Next Page"> <h5 class="h5">NEXT</h5></a> </div>  
+       
+      </div>
+ <div class="frame">     
+<div class="list">
+    
+    <label for="M.LIST">Choose your browser from the list:</label> <br>
+    <input list="M.LIST" name="M.LIST" id="LIST">
+    <datalist id="M.LIST">
+        <a href="#"><option value="QASIM"></a>
+        <a href="#"><option value="ASIM"></a>
+        <a href="#"><option value="HASHIM"></a>
+        <a href="#"><option value="HAMZA"></a>
+        <a href="#"><option value="AHMAD"></a>
+        <a href="#"><option value="ALI"></a>
+        <a href="#"><option value="ABDULLAH"></a>
+        <a href="#"><option value="ABDULLAH"></a>
+        <a href="#"><option value="SHAH"></a> 
+        <a href="#"><option value="WARIS"></a>
+        <a href="#"><option value="X RAY "></a>
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a> 
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a> 
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a>
+        <a href="#"><option value=""></a>                                            
+        </datalist>
+     
+    </div>
+ <!-- this is the end of the flexbox in this page -->
+</div>
+<div class="iframelink">
+    <a  id="iframelink"  href="" target="iframe_a">click to open product page Below Here</a>
+</div>
+<div class="iframe">
+    mouse here to open
+    <a  id="iframelink"  href="" target="iframe_a"> <iframe    src="demo_iframe.htm" name="iframe_a"  title="Click Here to Open The Product Page" border="2px">
+            
+        </iframe> </a>
+</div>
+</div>
+</body>
+</body>
+</html>
